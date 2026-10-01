@@ -1,0 +1,7 @@
+# run pip install -r requirements.txt to install the dependencies in this file
+# list of dependencies for the project
+pytest
+allure-pytest
+faker
+openai
+pydantic

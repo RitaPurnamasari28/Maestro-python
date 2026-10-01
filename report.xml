@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites>
+  <testsuite name="Test Suite" device="Pixel_6a_2" tests="3" failures="1" time="197.866" timestamp="2026-10-01T07:42:23">
+    <testcase id="01_EW_LOG_001_login" name="01_EW_LOG_001_login" classname="01_EW_LOG_001_login" file="maestro\01_EW_LOG_001_login.yaml" time="46.351" timestamp="2026-10-01T07:42:23" status="SUCCESS"/>
+    <testcase id="02_EW_CUS_001_add_customer" name="02_EW_CUS_001_add_customer" classname="02_EW_CUS_001_add_customer" file="maestro\02_EW_CUS_001_add_customer.yaml" time="105.611" timestamp="2026-10-01T07:43:09" status="SUCCESS"/>
+    <testcase id="login_fail" name="login_fail" classname="login_fail" file="maestro\login_fail.yaml" time="45.835" timestamp="2026-10-01T07:44:55" status="ERROR">
+      <failure>Assertion is false: "Attendance" is visible</failure>
+    </testcase>
+  </testsuite>
+</testsuites>

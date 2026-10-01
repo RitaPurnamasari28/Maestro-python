@@ -1,0 +1,18 @@
+appId: id.edot.ework
+---
+- launchApp:
+    clearState: true
+
+- tapOn:
+    id: "tv_company_id"
+- inputText: "5120731"
+- tapOn:
+    id: "tv_username"
+- inputText: "it.qa@edot.id"
+- tapOn:
+    id: "tv_password"
+- inputText: "it.QA2025"
+# missing submit button, to test what will happea to the enitre test if there is 1 test failed
+
+# Homepage
+- assertVisible: "Attendance"

@@ -1,0 +1,18 @@
+appId: id.edot.ework
+---
+- launchApp:
+    clearState: true
+
+- tapOn:
+    id: "tv_company_id"
+- inputText: "5120731"
+- tapOn:
+    id: "tv_username"
+- inputText: "it.qa@edot.id"
+- tapOn:
+    id: "tv_password"
+- inputText: "it.QA2025"
+- tapOn: "Sign In"
+
+# Homepage
+- assertVisible: "Attendance" #Tier 1 checking, to check user able to open the app properly, login and homepage appear

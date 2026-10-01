@@ -1,0 +1,56 @@
+appId: id.edot.ework
+---
+- launchApp:
+    clearState: true
+
+- tapOn:
+    id: "tv_company_id"
+- inputText: "5120731"
+- tapOn:
+    id: "tv_username"
+- inputText: "it.qa@edot.id"
+- tapOn:
+    id: "tv_password"
+- inputText: "it.QA2025"
+- tapOn: "Sign In"
+
+# Homepage
+- assertVisible: "Attendance"
+- tapOn:
+    id: "home_label_menu_title"
+    index: 5
+
+# Add new customer page 1
+- tapOn:
+    id: "noo_label_add_new_cust"
+- tapOn:
+    id: "noo_registration_input_outlet_name"
+- inputText: ${OUTLET_NAME}
+- tapOn:
+    id: "noo_registration_input_phone"
+- inputText: ${PHONE}
+- tapOn:
+    id: "noo_registration_input_email"
+- inputText: ${EMAIL}
+- tapOn:
+    id: "noo_registration_input_contact_person"
+- inputText: ${CONTACT_PERSON}
+- scrollUntilVisible:
+    element: "Pricelist"
+- tapOn:
+    id: "noo_registration_input_channel"
+- tapOn: "Modern Trade (MT)"
+- tapOn:
+    id: "noo_registration_input_outlet_type"
+- tapOn: "Retailer Small"
+- tapOn: "Continue"
+
+# Add new customer page 2
+- tapOn:
+    id: "noo_registration_input_address_type"
+- tapOn: "Delivery Address"
+- tapOn:
+    id: "noo_registration_input_address"
+- inputText: ${ADDRESS}
+
+# missing page 3 and tier 2, checking for checking data after add/save to validate data saved same with data that inputted when create new customer
