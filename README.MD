@@ -1,4 +1,4 @@
-# eDOT SFA Automation Framework (Mobile)
+Automation Framework (Mobile)
 
 1. Dependencies
 - Python 3.11+ 
